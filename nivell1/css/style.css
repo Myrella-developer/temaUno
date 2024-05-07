@@ -9,12 +9,12 @@
     flex-flow: column nowrap;
 }
     .header {
-        background: #03AED2;
+        background: #69191933;
         display: flex;
         flex-flow: column nowrap;
     }
         .menu {
-            background: #a4bcc5;
+            background: #FFF9D0;
             display: flex;
             flex-flow: row nowrap; 
             height: 100px;
@@ -35,12 +35,12 @@
                 flex: 1 1 auto;
                 height: 30px;
             }
-    .main {
-        background: #D895DA;
-    } 
-        h1 {
-            background: #bb222233;
-        }
+            .main {
+                background: #D895DA;
+            } 
+                h1 {
+                    background: #3592b633;
+                }
 
     .section {
         background: #69191933;
@@ -63,6 +63,8 @@
     .aside {
         background: #FFF9D0;
         flex: 1 1 auto;
+        display: flex;
+        flex-flow: column;
     }
         .public {
             background: #03AED2;
@@ -75,10 +77,26 @@
     }
         .foot{
             background: #D895DA;
-            width: 300px;
+            width: 100%;
         }
-@media all and (max-width: 800px){
+@media all and (max-width: 1200px){
     .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and  (max-width: 600px){
+    .articles {
+        flex-direction: column;
+    }
+    .aside {
         flex-direction: column;
     }
 }
