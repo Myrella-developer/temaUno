@@ -1,7 +1,56 @@
-h1 {
-    color: blueviolet;
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
 }
+.wrap {
+    background: #ae855733;
+}
+    .header {
+    background: #7469B6;
+    }
+        .menu {
+            background: #a4bcc5;
+        }
+            .logo { 
+                background: #b8c38633;
+            }
+            .nav {
+                background: #AD88C6;
+            }
+            .social {
+                background: #E1AFD1;
+            }
+    .main {
+        background: #FFF9D0;
+    } 
+        h1 {
+            background: #bb222233;
+        }
 
-body {
-    background-color: bisque;
-}
+    .section {
+    background: #69191933;
+    }
+        .articles {
+            background: #FFF9D0;
+        }
+            .article {
+                background: #03AED2;
+            }
+            .navigation {
+                background: #6C0345;
+            }
+    .aside {
+        background: #cccbda;
+    }
+        .public {
+            background: #D20062;
+        }
+
+    .footer {
+    background: #ae287933;
+    }
+        .foot{
+            background: #8576FF;
+        }
+    
