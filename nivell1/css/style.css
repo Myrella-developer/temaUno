@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .wrap {
+    max-width: 1200px;
     background: #ae855733;
     display: flex;
     flex-flow: column nowrap;
