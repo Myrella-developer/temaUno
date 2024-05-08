@@ -17,23 +17,22 @@
             background: #FFF9D0;
             display: flex;
             flex-flow: row nowrap; 
-            height: 100px;
-            align-items: center;
+            
         }
             .logo { 
                 background: #E1AFD1;
                 flex: 1 1 auto;
-                height: 30px;
+                
             }
             .nav {
                 background: #AD88C6;
                 flex: 5 1 auto;
-                height: 30px;
+                
             }
             .social {
                 background: #E1AFD1;
                 flex: 1 1 auto;
-                height: 30px;
+                
             }
             .main {
                 background: #D895DA;
@@ -93,6 +92,11 @@
     }
 }
 @media all and  (max-width: 600px){
+
+    .menu{
+        flex-direction: column;
+        display: flex;
+    }
     .articles {
         flex-direction: column;
     }
