@@ -1,8 +1,7 @@
 * {
-    margin: 0px;
-    padding: 10px;
     box-sizing: border-box;
     max-width: 1200px;
+  
 }
 body {
     font-family: "Catamaran", sans-serif;
@@ -14,6 +13,10 @@ a {
 .wrap {
     display: flex;
     flex-flow: column nowrap;
+    background-color: rgb(255, 251, 240);
+}
+.margin-header{
+    padding: 0 50px;          
 }
     .header {
         background: url(../img/header.jpg);
@@ -22,7 +25,8 @@ a {
         background-size: cover;
         display: flex;
         flex-flow: column nowrap;
-    }
+        height: 200px;
+    }  
         .menu {
             display: flex;
             flex-flow: row nowrap;
@@ -49,6 +53,7 @@ a {
             .social {
                 flex: 1 1 auto;
                 display: flex;
+                padding-left: 0px;
             }
                 .social a{
                     font-size: 18px;
@@ -61,7 +66,10 @@ a {
             .main {
                 background: rgba(0, 0, 0,.1);
                 border-bottom: 1px solid rgba(255, 255, 255,.5);
-                align-items: center;
+                margin-top: 80px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                
             }
                 h1 {
                     font-family: 'Lora',serif;
@@ -69,44 +77,98 @@ a {
                     color: #FF9F66;
                     font-weight: 300;
                     text-align: center;
-                    line-height: 1.6;
+                    line-height: 2.6;
+                    
                 } 
     .section {
-        background: #69191933;
+        background: #FBF9F1;
         display: flex;
+        padding-top: 10px;
+        padding-right: 0;
     }
         .articles {
-            background: #FFF9D0;
+            background: #dcd9d3;;
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;
+            
         }
             .article {
-                background: #03AED2;
                 flex: 1 1 40%;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 10px 0 0px;
+                flex: 1 1 45%;
+                background: #F6F5F2;
+                margin-left: 10px;
+                padding: 10px;
+            }
+            .article img{
+                width: 100%;
+            }
+            .article a{
+                color: #D895DA;
+                font-size: 13px;
+                padding: 10px;
+                margin: 10px 0;
+                display: inline-block;
+                padding-bottom: 0px;
+            }
+            .article a:hover{
+                color: #584e4e;
+            }
+            h3{
+                color: #F6F5F2;
+                background-color: #D895DA;
+                text-transform: uppercase;
+                margin-top: -25px;
+                font-size: 25px;
+                padding: 0px 0 10px;
+            }
+            h5{
+                font-size: 13px;
+                padding: 10px 0;
+                margin-top: -40px;
+                color: #FF9F66;
+            }
+            .col-left{
+                float: left;
+                width: 50%;
+                padding: 0 10px 0 0;
+            }
+            .col-right{
+                float: right;
+                width: 50%;
+                padding: 0 10px 0 0;
             }
             .navigation {
-                background: #D895DA;
+                background: #dcd9d3;
                 flex: 1 1 100%;
+                text-align: center;
             }
     .aside {
-        background: #FFF9D0;
+        background: #dcd9d3;
         flex: 1 1 auto;
         display: flex;
         flex-flow: column;
+        margin: 0px 10px 0px 10px;
     }
         .public {
-            background: #03AED2;
+            margin: 10px;
+            padding: 0;
+            text-align: center;
         }
 
     .footer {
-        background: #FFF9D0;
+        background: #F6F5F2;
         display: flex;
         justify-content: center;
+        margin: 10px;
     }
         .foot{
-            background: #D895DA;
+            background: #F6F5F2;
             width: 100%;
+            text-align: center;
         }
 @media all and (max-width: 1200px){
     .section {
