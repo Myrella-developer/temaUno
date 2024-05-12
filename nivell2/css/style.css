@@ -5,7 +5,8 @@
     max-width: 1200px;
 }
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Catamaran", sans-serif;
+    
 }
 a {
     text-decoration: none;  
@@ -23,12 +24,11 @@ a {
         flex-flow: column nowrap;
     }
         .menu {
-            background: rgba(0, 0, 0,.1);
             display: flex;
             flex-flow: row nowrap;
             height: 60px;
             align-items: center;
-            border-bottom: 1px solid rgba(255, 255, 255,.5);     
+               
         }
             .logo { 
                 flex: 1 1 auto;
@@ -59,12 +59,18 @@ a {
                     color: #D895DA;
                 }
             .main {
-                background: #D895DA;
-            } 
+                background: rgba(0, 0, 0,.1);
+                border-bottom: 1px solid rgba(255, 255, 255,.5);
+                align-items: center;
+            }
                 h1 {
-                    background: #3592b633;
-                }
-
+                    font-family: 'Lora',serif;
+                    font-size: 21px;
+                    color: #FF9F66;
+                    font-weight: 300;
+                    text-align: center;
+                    line-height: 1.6;
+                } 
     .section {
         background: #69191933;
         display: flex;
