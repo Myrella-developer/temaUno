@@ -1,11 +1,14 @@
 * {
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     box-sizing: border-box;
     max-width: 1200px;
 }
-body{
+body {
     font-family: "Montserrat", sans-serif;
+}
+a {
+    text-decoration: none;  
 }
 .wrap {
     display: flex;
@@ -20,26 +23,41 @@ body{
         flex-flow: column nowrap;
     }
         .menu {
-            background: #FFF9D0;
+            background: rgba(0, 0, 0,.1);
             display: flex;
-            flex-flow: row nowrap; 
-            
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255,.5);     
         }
             .logo { 
-                background: #E1AFD1;
                 flex: 1 1 auto;
-                
             }
             .nav {
-                background: #AD88C6;
                 flex: 5 1 auto;
-                
             }
+                .nav a{
+                    color: #584e4e;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .nav a :hover{
+                    color: #D895DA;
+                }
             .social {
-                background: #E1AFD1;
                 flex: 1 1 auto;
-                
+                display: flex;
             }
+                .social a{
+                    font-size: 18px;
+                    color: #584e4e;
+                    padding: 0 5px;
+                }
+                .social a :hover{
+                    color: #D895DA;
+                }
             .main {
                 background: #D895DA;
             } 
